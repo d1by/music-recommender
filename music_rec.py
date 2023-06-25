@@ -49,12 +49,12 @@ rand_inp = []
 for i in range(10):
     rand_inp.append(music['song'][random.randint(0, len(music))])
 
-print("Pick a song: ")
+# print("Pick a song: ")
 
 def pick():
     for i in range(10):
         print(f"{i+1}. {rand_inp[i]}")
-    inp = int(input())
+    inp = int(input("Pick a song: "))
     return inp-1
 
 while(True):
