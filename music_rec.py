@@ -19,7 +19,7 @@ tfidf = TfidfVectorizer(analyzer='word', stop_words='english')
 
 tfidf_matrix = tfidf.fit_transform(music['text'])
 
-tfidf.fit_transform(music['text'])
+# tfidf.fit_transform(music['text'])
 
 cos_similarities = cosine_similarity(tfidf_matrix)
 # print(cos_similarities[0][123])
